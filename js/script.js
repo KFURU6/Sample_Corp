@@ -71,7 +71,6 @@ $(function () {
         }
     })
 
-    
     const resultsContent = document.getElementsByClassName('results__content');
     console.log(resultsContent)
     window.addEventListener('load', function () {
