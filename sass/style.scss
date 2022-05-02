@@ -523,7 +523,8 @@ a {
     img {
         width: 64px;
         height: 64px;
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
     }
 }
 
@@ -758,8 +759,6 @@ a {
     
     @include mq(sp) {
         margin-top: 34px;
-        // width: 343px;
-        // height: 168px;
     }
 
     th {
@@ -858,7 +857,8 @@ a {
     }
 
     img {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
 }
 
@@ -1146,7 +1146,9 @@ select {
     border: 1px solid #707070;
     background: #fff;
     padding: 12px 16px;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     border-radius: 0;
     color: inherit;
     font-family: inherit;
@@ -1168,7 +1170,9 @@ select {
     border: none;
     background: #fff;
     padding: 12px 16px;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     border-radius: 0;
     color: inherit;
     font-family: inherit;
@@ -1182,7 +1186,9 @@ select {
     border: none;
     background: #fff;
     padding: 12px 16px;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     border-radius: 0;
     color: inherit;
     font-family: inherit;
@@ -1196,7 +1202,9 @@ textarea {
     border: 1px solid #707070;
     background: #fff;
     padding: 12px 16px;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     border-radius: 0;
     color: inherit;
     font-family: inherit;

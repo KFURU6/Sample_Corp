@@ -516,7 +516,7 @@ a {
   width: 64px;
   height: 64px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .service__subtitle {
@@ -856,7 +856,7 @@ a {
 }
 .comments__picture img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .comments__text {
@@ -1139,8 +1139,8 @@ select {
   background: #fff;
   padding: 12px 16px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 0;
   color: inherit;
   font-family: inherit;
@@ -1163,8 +1163,8 @@ select:hover {
   background: #fff;
   padding: 12px 16px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 0;
   color: inherit;
   font-family: inherit;
@@ -1179,8 +1179,8 @@ select:hover {
   background: #fff;
   padding: 12px 16px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 0;
   color: inherit;
   font-family: inherit;
@@ -1195,8 +1195,8 @@ textarea {
   background: #fff;
   padding: 12px 16px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 0;
   color: inherit;
   font-family: inherit;
