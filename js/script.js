@@ -65,15 +65,9 @@ $(function () {
             $('#js-form input[name="entry.435838897"]').val() !== "" &&
             $('#js-form input[name="entry.804454943"]').prop('checked') === true
         ) {
-            // 全て入力された時
             $submit.prop('disabled', false);
-            // $('#js-form input[type="submit]').prop('disabled', false);
-            // $submit.addClass('-active');
         } else {
-            // 入力されていない時
             $submit.prop('disabled', true);
-            // $('#js-form input[type="submit]').prop('disabled', true);
-            // $submit.removeClass('-active');
         }
     })
 
