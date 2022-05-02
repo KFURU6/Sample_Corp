@@ -100,10 +100,6 @@ a {
     z-index: 2000;
     transition: transform .4s ease 0s;
 
-    // &.is-open {
-    //     transform: translateX(-1100%);
-    // }
-
     span {
         position: absolute;
         width: 100%;
@@ -163,10 +159,6 @@ a {
         transform: translateX(100%);
         transition: transform .4s ease 0s;
         z-index: 1005;
-
-        // &.is-open {
-        //     transform: translateX(0);
-        // }
     }
 }
 
@@ -241,6 +233,10 @@ a {
     transform: translateY(-50%);
     padding-right: 55px;
     height: calc( (275 / 648) * 100%);
+    
+    @include mq(tab) {
+        padding-right: 25px;
+    }
 
     @include mq(sp) {
         left: 0;
@@ -253,6 +249,11 @@ a {
     font-size: 32px;
     letter-spacing: 0.02;
     font-weight: bold;
+    
+    @include mq(tab) {
+        font-size: 28px;
+        margin-top: 0;
+    }
 
     @include mq(sp) {
         font-size: 24px;
@@ -264,6 +265,10 @@ a {
     margin-top: 30px;
     letter-spacing: 0.45;
     font-weight: bold;
+    
+    @include mq(tab) {
+        margin-top: 8px;
+    }
 
     @include mq(sp) {
         font-size: 14px;
@@ -607,7 +612,6 @@ a {
 
     &.fake {
         background: transparent;
-        // background: $color-base;
     }
 }
 
@@ -656,10 +660,10 @@ a {
 }
 
 .results__count {
-    margin-top: 40px;
+    margin-top: 30px;
     width: 100%;
     height: 30px;
-    padding-left: 10px;
+    padding-left: 8px;
     line-height: 30px;
     
     @include mq(sp) {
@@ -696,7 +700,7 @@ a {
 }
 
 .results__footer {
-    margin-top: 24px;
+    margin-top: 32px;
     
     @include mq(sp) {
         margin-top: 18px;
@@ -885,6 +889,7 @@ a {
     background: $color-base;
     width: calc((980 / 1280) * 100%);
     height: 576px;
+    height: 100%;
     z-index: -1;
     top: 0;
     left: 0;
@@ -898,14 +903,6 @@ a {
 
 // ========================================
 // q&a
-.faqs {
-    margin-top: -38px;
-    
-    @include mq(sp) {
-        margin-top: -14px;
-    }
-}
-
 .faqs__inner {
     background: url(../img/qa-bg.png) no-repeat center center / cover;
     padding: 78px 40px 120px;
@@ -1133,10 +1130,9 @@ a {
     border-radius: 12px 12px 0 0;
     
     @include mq(sp) {
-        background: url(../img/SP/contact1.png) no-repeat center center / cover;
+        background: url(../img/SP/contact1.png) no-repeat center center / 110%;
         padding: 32px 16px;
-        width: 100%;
-        display: inline-block;
+        display: block;
     }
 }
 
@@ -1555,6 +1551,10 @@ textarea {
 .footer__inner {
     padding: 54px 160px;
     display: flex;
+    
+    @include mq(tab) {
+        padding: 54px 90px;
+    }
     
     @include mq(sp) {
         padding: 48px 77px;
