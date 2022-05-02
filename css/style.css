@@ -588,6 +588,9 @@ a {
 .results__content:nth-child(n+2) {
   margin-left: 40px;
 }
+.results__content.fake {
+  background: transparent;
+}
 
 .results__picture {
   height: 250px;
@@ -638,11 +641,10 @@ a {
 
 .results__count {
   margin-top: 40px;
-  width: 166px;
+  width: 100%;
   height: 30px;
   padding-left: 10px;
   line-height: 30px;
-  overflow-x: auto;
 }
 @media screen and (max-width: 599px) {
   .results__count {
@@ -662,7 +664,6 @@ a {
 .results__round + .results__round {
   margin-left: 20px;
 }
-
 .results__round.is-active::before {
   content: "";
   position: absolute;
@@ -1460,7 +1461,7 @@ textarea {
     font-size: 16px;
   }
 }
-.contact__submit button:hover {
+.contact__submit button:not(:disabled):hover {
   background: #F18900;
 }
 

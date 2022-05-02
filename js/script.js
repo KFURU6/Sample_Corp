@@ -81,26 +81,31 @@ $(function () {
     const resultsContent = document.getElementsByClassName('results__content');
     console.log(resultsContent)
     window.addEventListener('load', function () {
-        for (let i = 0; i < resultsContent.length; i++) {
+        for (let i = 3; i < resultsContent.length; i++) {
             const newElement = document.createElement("span");
             newElement.setAttribute("class", "results__round");
             const parentDiv = document.getElementById("results__count");
             parentDiv.appendChild(newElement);
         }
     });
-
-    let top = resultsContent.offsetWidth;
-    console.log(top);
-
-    // const resultsContentLeftScroll = resultsContent.position();
-    // console.log(resultsContentLeftScroll);
-
-    // const resultsContents = document.getElementById('contents');
-    // resultsContents.addEventListener('scroll', function() {
-    //     console.log('34');
-    // });
-    
- 
+    const resultsContents = document.getElementById('contents')
+    const resultsRound = document.getElementsByClassName('results__round');
+    resultsContents.addEventListener('scroll', function (e) {
+        let resultsContentsLeftPosition = resultsContents.getBoundingClientRect().left;
+        for (let i = 0; i < resultsContent.length; i++) {
+            let resultsContentLeftPosition = resultsContent[i].getBoundingClientRect().left;
+            const resultsContentWidth = resultsContent[i].clientWidth;
+            if (resultsContentLeftPosition + resultsContentWidth < 0) {
+                resultsRound[i].classList.remove('is-active');
+            }
+            else if (resultsContentsLeftPosition >= resultsContentLeftPosition) {
+                resultsRound[i].classList.add('is-active');
+            }
+            else {
+                resultsRound[i].classList.remove('is-active');
+            }
+        }
+    });
 
 
     //   const swiper = new Swiper('.swiper', {
