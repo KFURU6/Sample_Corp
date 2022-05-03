@@ -81,7 +81,7 @@ $(function () {
     });
     const resultsContents = document.getElementById('contents')
     const resultsRound = document.getElementsByClassName('results__round');
-    resultsContents.addEventListener('scroll', function (e) {
+    resultsContents.addEventListener('scroll', function () {
         let resultsContentsLeftPosition = resultsContents.getBoundingClientRect().left;
         for (let i = 0; i < resultsContent.length; i++) {
             let resultsContentLeftPosition = resultsContent[i].getBoundingClientRect().left;
